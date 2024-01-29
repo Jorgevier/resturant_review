@@ -13,7 +13,8 @@ api = Api(app)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 jwt = JWTManager(app)
-
+ 
+#find out why its not being used?????
 from models import UserModel, ReviewModel, ResturantModel
 
 from resources.user import bp as user_bp
